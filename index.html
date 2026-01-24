@@ -1,45 +1,147 @@
 <!doctype html>
-<html>
+<html lang="en" class="scroll-smooth">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
-
+  <title>Ahmad Ansari - Personal Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href='/style.css' rel='stylesheet'/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
-<body class="bg-stone-200">
+
+<body class="bg-gray-900 text-gray-200 font-sans">
+
+  <!-- Header -->
+  <header class="bg-gray-800/30 backdrop-blur-sm fixed top-0 left-0 right-0 z-50">
+    <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="#" class="text-2xl font-bold text-teal-400">Portofolio</a>
+      <ul class="flex items-center space-x-10">
+        <li><a href="#about" class="hover:text-teal-400 transition-colors">About</a></li>
+        <li><a href="#projects" class="hover:text-teal-400 transition-colors">Projects</a></li>
+        <li><a href="#contact" class="hover:text-teal-400 transition-colors">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container mx-auto px-6 py-24">
+    <!-- Hero Section -->
+    <section id="hero" class="flex flex-col md:flex-row items-center justify-between min-h-[70vh]">
+      <div class="md:w-1/2 mb-10 md:mb-0 text-center md:text-left">
+        <h1 class="text-5xl md:text-6xl font-extrabold mb-4">Hallo Aku Ansari</h1>
+        <p class="text-xl md:text-2xl text-teal-400 mb-6">Ini Web Pertama Saya</p>
+        <p class="text-gray-400 mb-8 max-w-lg mx-auto md:mx-0">Saya tertarik dengan teknologi sastra dan seni.</p>
+        <a href="#contact"
+          class="bg-teal-500 hover:bg-teal-600 text-white font-bold py-3 px-6 rounded-lg transition-transform transform hover:scale-105">Get
+          In Touch</a>
+      </div>
+      <div class="md:w-1/2 flex justify-center">
+        <div class="w-64 h-64 md:w-80 md:h-80 rounded-full bg-gray-800 overflow-hidden shadow-2xl shadow-teal-500/20">
+          <img src="MVIMG_20250521_223513.jpg"John Doe" class="w-full h-full object-cover">
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 my-20">
+      <h2 class="text-4xl font-bold text-center mb-12">About Me</h2>
+      <div class="max-w-3xl mx-auto bg-gray-800/50 p-8 rounded-xl shadow-lg">
+        <p class="text-gray-300 leading-relaxed">
+        Dalam dunia yang terus berubah, saya mencari ketenangan melalui sastra dan presisi melalui teknologi. Saya memandang seni sebagai cermin jiwa dan teknologi sebagai alat untuk memperluas kapasitas manusia. Bagi saya, kreativitas bukan tentang validasi, melainkan tentang menjalankan peran dengan sebaik-baiknya di dalam harmoni antara logika dan estetika.
+        </p>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 my-20">
+      <h2 class="text-4xl font-bold text-center mb-12">My Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Project Card 1 -->
+        <div
+          class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
+          <img src="ad97af2ac5e95a8a3f49211e87fa7e78.jpg" alt="Project 1" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Wedding Content Creator</h3>
+            <p class="text-gray-400 mb-4">Saya membantu mengabadikan moment melalui konten foto dan video yang autentik,
+              emosional, dan relevan untuk media sosial. Fokus pada menangkap momen real, detail kecil, serta cerita di
+              balik hari spesial, sehingga setiap karya terasa personal dan siap dibagikan.</p>
+            <a href="https://www.instagram.com/momentpicture_" class="text-teal-400 hover:underline">Kunjungi Platform
+              &rarr;</a>
+          </div>
+        </div>
+        <!-- Project Card 2 -->
+        <div
+          class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
+          <img src="f33b498455bb3c373a1a0076c6662bcb.jpg" alt="Project 2" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Welder & fitter</h3>
+            <p class="text-gray-400 mb-4">Saya berpengalaman dalam welding dan fitting, mulai dari fabrikasi, perakitan,
+              hingga pemasangan konstruksi. Fokus pada ketelitian, kekuatan sambungan, dan keselamatan kerja untuk
+              menghasilkan hasil yang rapi, presisi, dan sesuai standar.</p>
+            <input type="checkbox" id="toggle-2" class="peer hidden">
+            <label for="toggle-2" class="cursor-pointer text-teal-400 font-bold select-none">v</label>
+            <p class="text-gray-400 mt-3 hidden peer-checked:block inline-block transition-all duration-300">
+              hfsjgdut
+
+            </p>
 
 
-<div class="bg-stone-800">
-  <div class="flex justify-between container mx-auto py-5">
-    <h1 class="text-base font-bold text-white 5xl">Belajar</h1>
-    <ul class="flex text-white space-x-7 ">
-      <li><a href="">About</a></li>
-      <li><a href="">Portofolio</a></li>
-    </ul>
-  </div>
-</div>
+          </div>
+        </div>
+        <!-- Project Card 3 -->
+        <div
+          class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
+          <img src="layoutdesigner_online_1.jpg" alt="Project 3" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Web Devolopment</h3>
+            <p class="text-gray-400 mb-4">Sebagai product manager, saya membantu mengubah ide menjadi produk web yang
+               .</p>
+            <a href="https://creativecodee.vercel.app/" class="text-teal-400 hover:underline">View Project &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<div class="w-2/4 font-bold antialiased border-2 mx-auto my-4 border-gray-200 border-2 min-h-20 min-w-92 rounded-xl text-center bg-gray-200 p-3">
-  <h3>Sambutan</h3>
-<h4 class="italic text-sm">"Cinta terdiri dari satu jiwa yang menghuni dua tubuh" (Aristoteles), "Cinta tidak menemukan orang yang sempurna, melainkan melihat orang yang tidak sempurna dengan kesempurnaan" (Sam Keen), hingga yang sederhana seperti "Aku mencintaimu bukan karena siapa kamu, tetapi karena siapa aku ketika aku bersamamu"</h4>
-</div>
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 my-20">
+      <h2 class="text-4xl font-bold text-center mb-12">Contact Me</h2>
+      <div class="flex flex-col items-center text-center gap-4">
+        <p class="text-gray-400 mb-8">
+          Saya sangat terbuka terhadap saran, masukan, maupun peluang kolaborasi. Setiap umpan balik sangat berarti
+          untuk membantu saya meningkatkan kualitas karya dan layanan ke depannya.
+          Jangan ragu untuk menghubungi saya melalui kontak yang tersedia.
+        </p>
+        <a href="https//wa.me/6283143916759" class="bg-teal-500 hover:bg-teal-600 text-white font-bold py-3 px-8 rounded-lg transition-colors
+            " target="_blank" class="flex items-center gap-2">
 
-<h3 class="text-3xl text-center mb-3">Portofolio</h3>
-<div class="w-4/6 my-5 mx-auto grid grid-cols1 md:grid-cols-2 :grid-cols-3 gap-4 text-xl ">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-5 h-5 fill-current">
+            <path flex-item
+              d="M16 0C7.164 0 0 7.163 0 16c0 2.82.736 5.474 2.135 7.81L0 32l8.37-2.094A15.93 15.93 0 0016 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm0 29.09a13.05 13.05 0 01-6.66-1.83l-.48-.284-4.96 1.24 1.323-4.83-.31-.498A13.02 13.02 0 1129.09 16 13.105 13.105 0 0116 29.09zm7.176-9.73c-.39-.195-2.31-1.14-2.667-1.27-.357-.13-.618-.195-.878.195-.26.39-1.008 1.27-1.237 1.53-.227.26-.455.292-.845.097-.39-.195-1.646-.607-3.135-1.937-1.158-1.032-1.94-2.307-2.167-2.697-.227-.39-.024-.6.17-.795.176-.175.39-.455.585-.683.195-.227.26-.39.39-.65.13-.26.065-.487-.032-.682-.098-.195-.878-2.117-1.203-2.902-.316-.76-.638-.658-.878-.67l-.747-.014c-.26 0-.683.098-1.04.487-.357.39-1.365 1.334-1.365 3.252 0 1.918 1.397 3.773 1.592 4.033.195.26 2.75 4.2 6.665 5.89.93.4 1.657.64 2.225.82.935.297 1.787.255 2.46.155.75-.112 2.31-.945 2.635-1.855.325-.91.325-1.69.227-1.855-.097-.163-.357-.26-.747-.455z" />
+          </svg>
 
- <img src="IMG_20251219_211953.jpg" class="aspect-square object-cover w-full">
-  <source src="lagu-buat-doi.mp3" type="audio/mpeg">
-  <div class="h-40 rounded-xl bg-gray-100 border-2 flex justify-center item-center">01</div>
-  <div class="h-40 rounded-xl bg-gray-100 border-2 flex justify-center item-center">02</div>
-  <div class="h-40 rounded-xl bg-gray-100 border-2 flex justify-center item-center">03</div>
-</div>
- 
-<img src="IMG_20251219_211953.jpg"
+          <span>Hubungi Saya</span>
+
+        </a>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800/50 mt-20">
+    <div class="container mx-auto px-6 py-8 text-center text-gray-400">
+      <div class="flex justify-center space-x-6 mb-4">
+        <a href="#" class="text-2xl hover:text-teal-400"><i class="fab fa-github"></i></a>
+        <a href="#" class="text-2xl hover:text-teal-400"><i class="fab fa-linkedin"></i></a>
+        <a href="#" class="text-2xl hover:text-teal-400"><i class="fab fa-twitter"></i></a>
+      </div>
+      <p>Ini Adalah FirstProject</p>
+    </div>
+  </footer>
 
 
-
+  <script src="/main.js"></script>
 </body>
 
 </html>
+ 
